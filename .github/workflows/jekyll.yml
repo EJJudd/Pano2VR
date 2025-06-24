@@ -3,7 +3,7 @@ name: Jekyll site CI
 on:
   push:
     branches:
-      - main  # or your default branch name
+      - main
 
 jobs:
   build-and-deploy:
@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        persist-credentials: false
 
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
@@ -24,12 +26,17 @@ jobs:
         bundle install
 
     - name: Build the site
-      run: bundle exec jekyll build -s docs -d _site
+      run: bundle exec jekyll build -s docs -d docs
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
-        publish_branch: gh-pages
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email 
+"github-actions[bot]@users.noreply.github.com"
+        git add docs
+        git commit -m "Rebuild site [skip ci]" || echo "No changes to 
+commit"
+        git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
