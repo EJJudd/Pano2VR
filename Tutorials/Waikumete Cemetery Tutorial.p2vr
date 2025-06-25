@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Pano2VR project file  -->
+<pano2vrconfig rev="20995" version="7.1.9">
+  <panorama>
+    <id>node1</id>
+    <input>
+      <patch/>
+    </input>
+    <viewingparameter>
+      <pan/>
+      <tilt/>
+      <fov/>
+      <flyinstart/>
+    </viewingparameter>
+    <userdata>
+      <customprops/>
+      <title>Waikumete Cemetery Tutorial</title>
+      <altitude>-3048</altitude>
+      <description>Tour of the Waikumete Cemetery with video</description>
+      <author>E Judd</author>
+    </userdata>
+    <projectsettings>
+      <userdata>
+        <customprops/>
+        <title>Waikumete Cemetery Tutorial</title>
+        <description>Tour of the Waikumete Cemetery with added video</description>
+        <author>E Judd</author>
+      </userdata>
+      <mapgrid>
+        <anchor/>
+      </mapgrid>
+      <floorplangrid>
+        <anchor/>
+      </floorplangrid>
+      <usenodealtitude>0</usenodealtitude>
+      <language>en-US</language>
+      <translatehotspotmedia>1</translatehotspotmedia>
+      <translatepinnedmedia>1</translatepinnedmedia>
+      <translationspath>translations</translationspath>
+      <fovmode>diagonal</fovmode>
+      <translationsavailable>
+        <value id="Project">en-US</value>
+      </translationsavailable>
+      <translationsnames>
+        <value id="Project">American English</value>
+      </translationsnames>
+      <translationsenabled>
+        <value id="Project">true</value>
+      </translationsenabled>
+    </projectsettings>
+    <floorplans/>
+    <hotspots/>
+    <output/>
+    <streetview/>
+    <streetviewproject/>
+    <ggloudproject/>
+    <sounds/>
+    <animation>
+      <title>Animation01</title>
+    </animation>
+  </panorama>
+</pano2vrconfig>
