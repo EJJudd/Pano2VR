@@ -1,17 +1,24 @@
 # Pano2VR Tutorials
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome! 
 
-## Commands
+This site step-by-step instructions for learning how to create virtual field trips in Pano2VR with tutorials that you can follow along with.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+---
 
-## Project layout
+## Tutorials
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+---
+
+### [Getting Started](getting-started.md)
+Download the tutorial materials and start a new project.
+
+---
+
+### [Addding Images](adding-images.md)
+Learn how to load, geolocate, orient, and level 360° images.
+
+---
+
+### [Adding Video](adding-videos.md)
+Guide to adding embedded and linked videos.

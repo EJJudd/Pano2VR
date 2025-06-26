@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Adding Images - Pano2VR</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Adding Images";
+        var mkdocs_page_input_path = "adding-images.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+ <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Pano2VR
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../getting-started/">Getting Started</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Adding Images</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#load-the-images">Load the images</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#add-or-modify-the-geolocation-of-the-images">Add or modify the geolocation of the images</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#orient-the-images">Orient the images</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#level-the-360-images">Level the 360° images</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../adding-videos.md">Adding Videos</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Pano2VR</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Adding Images</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="adding-images">Adding Images</h1>
+<h2 id="load-the-images">Load the images</h2>
+<p>The first step when building a virtual trip is to load the 360° images into the project. This tutorial contains four 360° images of <em>Waikumete Cemetery</em>. The images can be loaded two ways:</p>
+<ul>
+<li>
+<p><strong>Option 1</strong>: Click the <strong>input</strong> icon (<a class="glightbox" href="../assets/images/InputIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Input Icon" src="../assets/images/InputIcon.png" width="25" /></a>) in the top-left toolbar. When the file selection dialog box appears, navigate to the tutorial files, select all four images, and click <code>Open</code>.<br><br></p>
+</li>
+<li>
+<p><strong>Option 2</strong>: Select all four images in your file browser (outside of the application) and drag them directly into the Pano2VR window.</p>
+</li>
+</ul>
+<p>The images should now appear in the tour browser panel at the bottom of the screen.
+<a class="glightbox" href="../assets/images/TourBrowser.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Tour Browser" src="../assets/images/TourBrowser.png" /></a></p>
+<div class="admonition info">
+<p class="admonition-title">Tour Browser</p>
+<p>If the Tour Browser panel isn't already be open (or if it is accidentally closed), it can be reopened by clicking on the <strong>Tour Browser</strong> icon (<a class="glightbox" href="../assets/images/TourBrowserIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Tour Browser Icon" src="../assets/images/TourBrowserIcon.png" width="20" /></a>) in the <em>Edit</em> toolbar, or using the menubar by clicking <code>Window</code> → <code>Tour Browser</code>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Pro tip</p>
+<p>Pano2VR defaults to displaying the original image description at the time of capture, rather than the filename of the image. The image description can be modified using the exiftool package in the command line.</p>
+</div>
+<h2 id="add-or-modify-the-geolocation-of-the-images">Add or modify the geolocation of the images</h2>
+<p>Some images will already have GPS information embedded, while others (like the <em>Waikumete Cemetery</em> images) will not. Regardless, it is a good idea to confirm that the geolocation information is correct. </p>
+<p>To add geolocation information:</p>
+<ul>
+<li>
+<p><strong>Select the image in the Tour Browser panel</strong>: For this example, select <em>WaikumeteCemetery1</em>.JPG (WC1). <br><br></p>
+</li>
+<li>
+<p><strong>Open the Tour Map</strong>: Click on the <strong>Tour Map</strong> icon (<a class="glightbox" href="../assets/images/TourMapIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Tour Map Icon" src="../assets/images/TourMapIcon.png" width="25" /></a>)to open the tour map panel.<br><br></p>
+</li>
+<li>
+<p><strong>Switch the map view to Google Maps - Satellite</strong>: The default map view is the World Map, but this won't provide enough detail to precisely identify the locations where the image were taken. In the <code>Map</code> field, toggle from <em>World Map</em> to <em>Google Maps - Satellite</em>. </p>
+<p><a class="glightbox" href="../assets/images/MapField.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Map Field" src="../assets/images/MapField.png" width="200" /></a></p>
+</li>
+<li>
+<p><strong>Search for the address</strong>: Enter the address or name of the location where the photo was taken into the <code>Address</code> field type. </p>
+<p>In this example, type <em>Waikumete Cemetery</em> into the <code>Address</code> field. Press enter or click the magnifying glass icon to search. A green flag will be dropped in the middle of Waikumete Cemetery.</p>
+<p><a class="glightbox" href="../assets/images/TourMap1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Tour Map 1" src="../assets/images/TourMap1.png" /></a></p>
+</li>
+<li>
+<p><strong>Manually update the location of the image</strong>: The address search drops a green flag in the vacinity of where the image was taken, but it doesn't provide the precise location -- the actual location where the image was taken is marked with the red star on the image above. </p>
+<p>To manually refine the location, zoom in to the location marked by the red star on the image above and double click. Once the red pin appears, it can be moved by either dragging the pin or nudging it with the arrow keys.</p>
+<p><a class="glightbox" href="../assets/images/TourMap2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Tour Map 2" src="../assets/images/TourMap2.png" /></a></p>
+</li>
+</ul>
+<h2 id="orient-the-images">Orient the images</h2>
+<p>Once the geolocation pin is in the correct position, the next step is to orient the image. The red semicircle extending for the pin should match the orientation visible on the 360° image. However, in this example, the 360° image facing down the road, while the pin is N facing away from the road.</p>
+<p><a class="glightbox" href="../assets/images/TourMap3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Tour Map 3" src="../assets/images/TourMap3.png" /></a></p>
+<p>Pano2VR uses landmarks to help reorient images. To do this:</p>
+<ul>
+<li><strong>Find a landmark that is visible in both the image and the map.</strong> In this example, the church is the landmark.<br><br></li>
+<li><strong>Align the landmark in the centre of the image</strong> by clicking and dragging until it is centred in the crosshairs of the red grid lines.<br><br></li>
+<li><strong>Select <em>Pick Landmark</em> from the Tools icon.</strong><br><br>
+    <a class="glightbox" href="../assets/images/TourMap4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Tour Map 4" src="../assets/images/TourMap4.png" /></a><br><br></li>
+<li><strong>Double-click on the landmark in the Tour Map.</strong> In this example, double-click on the church at the end of the road.<br><br>
+    <a class="glightbox" href="../assets/images/TourMap5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Tour Map 5" src="../assets/images/TourMap5.png" /></a></li>
+</ul>
+<p>The image view should now align with the map orientation. Navigate around the 360° image to make sure that the <strong>Tour Map</strong> view correctly follows the movements.</p>
+<div class="admonition info">
+<p class="admonition-title">Grid lines</p>
+<p>Grid lines should appear automatically once the images are loaded. However, if they are not visible, click the grid icon (<a class="glightbox" href="../assets/images/GridIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Grid Icon" src="../assets/images/GridIcon.png" width="25" /></a>) at the bottom of the image to toggle the grid lines on.</p>
+</div>
+<h2 id="level-the-360-images">Level the 360° images</h2>
+<p>While Pano2VR does automatically level images, they can still sometimes appear tilted or skewed, depending on the angle of the tripod was on when the image was captured and the complexity of the terrain. This can be fixed by manually leveling the image.</p>
+<p>To show the automatic alignment to equitorial level, press the <code>L</code> key.</p>
+<p>To manually adjust the level of image:
+- hold down the <code>L</code> key and left click to drag the image into level.
+- the location of the cursor marks the fulcrum of the levelling rotation. 
+- clicking on the centre vertical red line moves the horizon up and down (use the arrow keys for finer control).</p>
+<p>Once the image has been relevelled, rotate the image horizontally (east or west) and press <code>L</code> again to recheck the level from a new angle. Repeat this process as needed. Some images may require trial and error to find a level that feels balanced from all directions.</p>
+<div class="admonition tip">
+<p class="admonition-title">Pro tip</p>
+<p>Aligning the image to clear visual references, such as buildings, the horizon, or any other vertical or horizontal features can improve accuracy.</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../getting-started/" class="btn btn-neutral float-left" title="Getting Started"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../getting-started/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
+</html>
