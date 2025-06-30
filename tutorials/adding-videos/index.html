@@ -1,0 +1,952 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../adding-images/">
+      
+      
+        <link rel="next" href="../../resources/video-properties/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Adding Video - Pano2VR</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#adding-video" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pano2VR" class="md-header__button md-logo" aria-label="Pano2VR" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pano2VR
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Adding Video
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../getting-started/" class="md-tabs__link">
+          
+  
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../resources/image-properties.md" class="md-tabs__link">
+          
+  
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pano2VR" class="md-nav__button md-logo" aria-label="Pano2VR" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Pano2VR
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tutorials
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adding-images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adding Images
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Adding Video
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adding Video
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pinning-a-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pinning a video
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pinning a video">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-add-the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Add the video
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-a-preview-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Add a Preview Frame
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-modify-the-video-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Modify the video properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-resize-the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Resize the video
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-output-and-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Output and test
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-video-as-a-hotspot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding video as a hotspot
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/image-properties.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Image Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/video-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Video Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="adding-video"><strong>Adding Video</strong></h1>
+<p>There are several ways to add video to a virtual field trip in Pano2VR. This tutorial covers four different methods:</p>
+<ul>
+<li><strong>Option 1</strong>: Pinning video within the panorama</li>
+<li><strong>Option 2</strong>: Adding video as a hot spot  </li>
+<li><strong>Option 3</strong>: Embedding video with patches</li>
+<li><strong>Option 4</strong>: Adding video in the skin or UI overlay</li>
+</ul>
+<div class="admonition download">
+<p class="admonition-title">System requirements</p>
+<p>Before beginning this tutorial, FFmpeg must be installed and the file path to the FFmpeg executable must be specified within Pano2VR’s Preferences/Settings. If you have not already done this, follow the instructions in the <a href="../getting-started/">Getting Started</a> page.</p>
+</div>
+<hr />
+<h2 id="pinning-a-video"><strong>Pinning a video</strong></h2>
+<p>A pinned video is placed directly into the 360° image and appears as a patch (i.e., the video will cover whatever part of the 360° image is behind it).</p>
+<table class="full-width-table">
+  <tr>
+    <td>
+      <strong>Pros</strong>
+      <ul>
+        <li>Visually integrates videos into the 360° image</li>
+        <li>Highly visible (i.e., easy for users to engage with)</li>
+        <li>Can auto-play or respond to user interaction</li>
+      </ul>
+    </td>
+    <td>
+      <strong>Cons</strong>
+      <ul>
+        <li>Requires careful positioning, scaling</li>
+        <li>Require pre-processing of the video (e.g., color correction)</li>
+        <li>Can appear unpolished if the video is not well integrated</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Applications</strong>
+      <ul>
+        <li>Adding a speaker or guide directly into the field trip</li>
+        <li>Showing activity at a location (e.g., a person demonstrating something)</li>
+      </ul>
+    </td>
+    <td>
+      <strong>Customizations</strong>
+      <ul>
+        <li>Playback behavior (e.g., autoplay, loop, manual start)</li>
+        <li>Sound mode (e.g., static, directional)</li>
+        <li>Click behavior (e.g., pop out, play/pause)</li>
+        <li>Placement, size, rotation</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<h3 id="step-1-add-the-video"><strong>Step 1</strong>: Add the video</h3>
+<p>There are two ways to add a pinned video:</p>
+<ul>
+<li><strong>Option 1</strong>: In the 
+<span class="tooltip">Viewer Panel
+  <span class="tooltip-content">
+    <a class="glightbox" href="/assets/images/ViewerPanel.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/ViewerPanel.png" alt="Viewer Panel"></a>
+  </span>
+</span>, open 
+<span class="tooltip">View Modes
+  <span class="tooltip-content">
+    <a class="glightbox" href="/assets/images/ViewModes.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/ViewModes.png" alt="Viewer Panel"></a>
+  </span>
+</span>and select 
+<span class="tooltip">Video Mode
+  <span class="tooltip-content">
+    <a class="glightbox" href="/assets/images/VideoMode.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/VideoMode.png" alt="Viewer Panel"></a>
+  </span>
+</span>, or press the <code>V</code> key on the keyboard. Double-click on the general location where you want the video to appear within the image. A dialog box will pop up. Navigate to the video and click <code>Open</code>.</li>
+<li><strong>Option 2</strong>: Drag the video file directly from your file browser into the <span class="tooltip">Viewer Panel
+  <span class="tooltip-content">
+    <a class="glightbox" href="/assets/images/ViewerPanel.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/ViewerPanel.png" alt="Viewer Panel"></a>
+  </span>
+</span>.</li>
+</ul>
+<div class="admonition try">
+<p class="admonition-title">Give it a try!</p>
+<p>In this example, we’ll add <em>WC1_Video.mp4</em> to <em>WaikumeteCemetery1.JPG</em>. The video was taken in front of the church and aligns with the default view. </p>
+<p>Before adding the video, right-click in the Viewer and select <code>Go to Default View</code>. Then add the video using either of the options above</p>
+</div>
+<h3 id="step-2-add-a-preview-frame"><strong>Step 2</strong>: Add a Preview Frame</h3>
+<p>After adding the video, Pano2VR will prompt you to generate a preview image. This is a static preview that will appear before the video loads or plays.</p>
+<p>Pano2VR can generate a preview automatically using FFmpeg, or you can provide your own preview image. </p>
+<div class="admonition try">
+<p class="admonition-title">Give it a try!</p>
+<p>Select <code>Yes</code> when prompted: <code>Would you like Pano2VR to create a preview file for you?</code></p>
+<p>A dialogue box will appear. Name the preview file (e.g., <em>WC1_Video_Preview</em>) and select a location for it (e.g., the same folder as the tutorial videos).</p>
+</div>
+<div class="admonition trouble">
+<p class="admonition-title">Troubleshooting</p>
+<p>If the <code>Would you like Pano2VR to create a preview file for you?</code> prompt does not appear or if an error occurs, double-check that FFmpeg is installed and that the file path to the executable is correctly entered in Pano2VR’s settings. See the <a href="../getting-started/">Getting Started</a> page for more details.</p>
+</div>
+<h3 id="step-3-modify-the-video-properties"><strong>Step 3</strong>: Modify the video properties</h3>
+<p>The video properties will automatically appear in the <span class="tooltip">Properties Panel
+  <span class="tooltip-content">
+    <a class="glightbox" href="/assets/images/PropertiesPanel.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/PropertiesPanel.png" alt="Viewer Panel"></a>
+  </span>
+</span>when the video is selected. There are several properties which can be viewed and/or modified. For a full list, see the <a href="https://ggnome.com/doc/pano2vr/workspace/viewer-modes/videos-props/">Pano2VR video properties documentation</a>. Here we will only modify a few properties:</p>
+<ul>
+<li>
+<p><strong>ID</strong>: Each video element is given a unique ID. The default is <em>Element01</em>. The number will increase with each added element.</p>
+<div class="admonition try">
+<p class="admonition-title">Give it a try!</p>
+<p>Rename the ID to: <em>Video01</em>.</p>
+</div>
+</li>
+<li>
+<p><strong>File</strong>: This shows the path to and filename of the video. The video can be swapped out at anytime for another video by clicking on the <strong>folder</strong> icon (<a class="glightbox" href="../../assets/images/FolderIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Folder Icon" src="../../assets/images/FolderIcon.png" width="25" /></a>)</p>
+</li>
+<li>
+<p><strong>Mode</strong>: This field refers to the sound mode. There are six sound modes:</p>
+<ul>
+<li><strong>Static</strong>: the audio will play uniformly in all directions.</li>
+<li><strong>Surround</strong>: the audio will play in all directions, but the sound channels will automatically adjust to match the perspective.</li>
+<li>
+<p><a class="glightbox" href="../../assets/images/ModeDirectionalRectangular.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="right" alt="Directional Rectangular Mode" src="../../assets/images/ModeDirectionalRectangular.png" width="50%," /></a><strong>Directional Rectangular</strong> (<em>default mode</em>): the audio will play at maximum level when centred on the field (green rectangle) and gradually fade out following the rectangular sound field (yellow). </p>
+<p>The <em>Horizontal</em>, <em>Vertical</em>, and <em>Field</em> sizes can also be adjusted in the <span class="tooltip">Properties Panel
+  <span class="tooltip-content">
+    <a class="glightbox" href="/assets/images/PropertiesPanel.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/PropertiesPanel.png" alt="Viewer Panel"></a>
+  </span>
+</span>.</p>
+</li>
+<li>
+<p><strong>Directional Circular</strong>: the audio behaves the same as in the <strong>Directional Rectangular</strong> mode but uses a circular sound field.</p>
+</li>
+<li><strong>Effect Rectangular</strong>: the audio will only play within the rectangular sound field (green rectangle).</li>
+<li><strong>Effect Circular</strong>: the audio will only play within the circular sound field (green circle).</li>
+</ul>
+<div class="admonition try">
+<p class="admonition-title">Give it a try!</p>
+<p>Select the <code>Static</code> sound mode.</p>
+</div>
+</li>
+<li>
+<p><strong>Loop</strong>: This field can be modified to change the number of times the video repeats its playback. There are several options:</p>
+<ul>
+<li><strong>-1</strong>: the video will not play until it is activated by a click (or another action specified in the Skin Editor)</li>
+<li><strong>0</strong>: the video will play on a continuous loop</li>
+<li><strong>1</strong> (<em>default loop</em>): the video will play once</li>
+<li><strong>Any positive integer</strong>: plays the video that number of times (e.g., entering <code>4</code> will loop the video four times).</li>
+</ul>
+<div class="admonition try">
+<p class="admonition-title">Give it a try!</p>
+<p>Change the <em>Loop</em> value to <strong>-1</strong>, which will require the video playback to be activated by a click.    </p>
+</div>
+</li>
+<li>
+<p><strong>Click Mode</strong> This field specifies what will happen when a user clicks on the video. There are  from the following options:</p>
+<ul>
+<li><strong>None</strong>: nothing happens.</li>
+<li><strong>Play/Pause</strong>: clicking will start and stop the video.</li>
+<li><strong>Pop out original</strong>: clicking will enlarge the video to its original dimensions and begin playing.</li>
+<li><strong>Pop out fit</strong>: clicking will enlarge the video to fit the window and begin playing.</li>
+</ul>
+<div class="admonition try">
+<p class="admonition-title">Give it a try!</p>
+<p>Change the <em>Click Mode</em> to <strong>Play/Pause</strong>, which means that clicking will start or stop the vide playback.    </p>
+</div>
+</li>
+</ul>
+<h3 id="step-4-resize-the-video"><strong>Step 4</strong>: Resize the video</h3>
+<p>When the video is selected in the Viewer, you should see the preview image when the video is selected in the Viewer. Use the control handles to adjust its placement and rotation:</p>
+<ul>
+<li><strong>Move</strong>: Click the center handle to reposition the video in the panorama.</li>
+<li><strong>Resize</strong>: Drag the red corner handles to scale the video and match the surrounding environment.</li>
+<li><strong>Rotate Horizontally</strong>: Click and drag the top arrow in a vertical motion.</li>
+<li><strong>Rotate Vertically</strong>: Click and drag the left arrow in a vertical motion.</li>
+<li><strong>Spin</strong>: Click and drag the center rotation arrow vertically to rotate the video around its own axis.</li>
+</ul>
+<div class="admonition try">
+<p class="admonition-title">Give it a try!</p>
+<p>Resize the video using the church as a guide. Zoom in to the video get a better view. Drag the red corner handles to align the roof, bottom, and windows of the church in the video to their position within the 360° image. 
+<a class="glightbox" href="../../assets/images/PinningVideo1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PinningVideo1" src="../../assets/images/PinningVideo1.png" /></a></p>
+</div>
+<div class="admonition protip">
+<p class="admonition-title">Pro tip</p>
+<p>The yellow and green sound fields can make it difficult to resize and position videos accurately.</p>
+<p>Regarless of which sound mode is ultimately used, temporarily switching to the <code>Static</code> mode can make it easier to properly align the video.</p>
+</div>
+<h3 id="step-5-output-and-test"><strong>Step 5</strong>: Output and test</h3>
+<p>Once the video is pinned and configured, output the trip to test the results and make sure the video behaves as expected. To output the trip:</p>
+<ul>
+<li>Navigate to the Output panel. If it is not already open, click on the <strong>Output</strong> icon (<a class="glightbox" href="../../assets/images/OutputIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Output Icon" src="../../assets/images/OutputIcon.png" width="25" /></a>).</li>
+<li>Click on the green plus icon (<a class="glightbox" href="../../assets/images/GreenPlusIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Green Plus Icon" src="../../assets/images/GreenPlusIcon.png" width="25" /></a>) to add an output and choose <code>Web</code>.</li>
+<li>Pano2VR will automatically create an output folder in the same folder that the project is saved. Optionally, the output folder path can be manually selected by clicking on the <strong>Folder</strong> icon (<a class="glightbox" href="../../assets/images/FolderIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Folder Icon" src="../../assets/images/FolderIcon.png" width="25" /></a>) next to <code>Output Folder</code>.</li>
+<li>Click on the <strong>Generate Output</strong> icon (<a class="glightbox" href="../../assets/images/GenerateOutputIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Generate Output Icon" src="../../assets/images/GenerateOutputIcon.png" width="25" /></a>).</li>
+<li>Once the output is generated, the trip should automatically open in your default internet browser.</li>
+</ul>
+<div class="admonition protip">
+<p class="admonition-title">Pro tip</p>
+<p>The yellow and green sound fields can make it difficult to resize and position videos accurately.</p>
+<p>Regarless of which sound mode is ultimately used, temporarily switching to the <code>Static</code> mode can make it easier to properly align the video.</p>
+</div>
+<hr />
+<h2 id="adding-video-as-a-hotspot"><strong>Adding video as a hotspot</strong></h2>
+<p>A video hotspot triggers a video to play when the user clicks on an icon (or <em>hot spot</em>) within the 360° image. The video is not visible until activated.</p>
+<table class="full-width-table">
+  <tr>
+    <td>
+      <strong>Pros</strong>
+      <ul>
+        <li>Keeps the panorama visually clean and uncluttered</li>
+        <li>Gives users control over when the video appears</li>
+        <li>Easier to position since video isn't embedded</li>
+      </ul>
+    </td>
+    <td>
+      <strong>Cons</strong>
+      <ul>
+        <li>Less immediately noticeable (i.e., users might miss it)</li>
+        <li>Adds an extra step before the video is seen</li>
+        <li>Can feel less immersive than pinned or embedded videos</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Applications</strong>
+      <ul>
+        <li>Providing optional or supplemental content</li>
+        <li>Linking to explainer videos or background information</li>
+        <li>Reducing visual load in busy scenes</li>
+      </ul>
+    </td>
+    <td>
+      <strong>Customizations</strong>
+      <ul>
+        <li>Hotspot style, size, and appearance</li>
+        <li>Trigger behavior (e.g., click, hover)</li>
+        <li>Video playback settings (e.g., pop-up size/position)</li>
+        <li>Tooltip text or hover info</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "toc.integrate", "search.suggest"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

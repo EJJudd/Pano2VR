@@ -1,0 +1,197 @@
+
+/* Admonition styles */
+
+/* Download admonition */
+:root {
+  --md-admonition-icon--download: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%2393c5fd'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3'/%3E%3C/svg%3E");
+}
+.md-typeset .admonition.download,
+.md-typeset details.download {
+  border-color: rgb(150, 161, 58);
+  background-color: rgba(150, 161, 58, 0.1); /* Light purple background for body */
+
+}
+.md-typeset .download > .admonition-title,
+.md-typeset .download > summary {
+  background-color: rgba(150, 161, 58);
+  color: #ffffff
+}
+.md-typeset .download > .admonition-title::before,
+.md-typeset .download > summary::before {
+  background-color: #ffffff;
+  -webkit-mask-image: var(--md-admonition-icon--download);
+          mask-image: var(--md-admonition-icon--download);
+}
+
+/* Try admonition */
+:root {
+  --md-admonition-icon--try: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='size-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59' /%3E%3C/svg%3E%0A");
+}
+.md-typeset .admonition.try,
+.md-typeset details.try {
+  border-color: rgb(107, 56, 78);
+  background-color: rgba(107, 56, 78, 0.2); /* Light purple background for body */
+
+}
+.md-typeset .try > .admonition-title,
+.md-typeset .try > summary {
+  background-color: rgba(107, 56, 78, 0.9);
+  color: #ffffff;
+}
+.md-typeset .try > .admonition-title::before,
+.md-typeset .try > summary::before {
+  background-color: #ffffff;
+  -webkit-mask-image: var(--md-admonition-icon--try);
+          mask-image: var(--md-admonition-icon--try);
+}
+
+/* Pro Tip admonition */
+:root {
+  --md-admonition-icon--protip: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M9.97308 18H14.0269C14.1589 16.7984 14.7721 15.8065 15.7676 14.7226C15.8797 14.6006 16.5988 13.8564 16.6841 13.7501C17.5318 12.6931 18 11.385 18 10C18 6.68629 15.3137 4 12 4C8.68629 4 6 6.68629 6 10C6 11.3843 6.46774 12.6917 7.31462 13.7484C7.40004 13.855 8.12081 14.6012 8.23154 14.7218C9.22766 15.8064 9.84103 16.7984 9.97308 18ZM14 20H10V21H14V20ZM5.75395 14.9992C4.65645 13.6297 4 11.8915 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10C20 11.8925 19.3428 13.6315 18.2443 15.0014C17.624 15.7748 16 17 16 18.5V21C16 22.1046 15.1046 23 14 23H10C8.89543 23 8 22.1046 8 21V18.5C8 17 6.37458 15.7736 5.75395 14.9992ZM13 10.0048H15.5L11 16.0048V12.0048H8.5L13 6V10.0048Z'%3E%3C/path%3E%3C/svg%3E");
+}
+.md-typeset .admonition.protip,
+.md-typeset details.protip {
+  border-color: rgb(246, 174, 45);
+  background-color: rgba(246, 174, 45, 0.2); /* Light purple background for body */
+
+}
+.md-typeset .protip > .admonition-title,
+.md-typeset .protip > summary {
+  background-color: rgba(246, 174, 45, 0.9);
+  color: #ffffff;
+}
+.md-typeset .protip > .admonition-title::before,
+.md-typeset .protip > summary::before {
+  background-color: #ffffff;
+  -webkit-mask-image: var(--md-admonition-icon--protip);
+          mask-image: var(--md-admonition-icon--protip);
+}
+
+/* Troubleshoot admonition */
+:root {
+  --md-admonition-icon--trouble: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='size-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z' /%3E%3C/svg%3E%0A");
+}
+.md-typeset .admonition.trouble,
+.md-typeset details.trouble {
+  border-color: rgb(240, 84, 79);
+  background-color: rgba(240, 84, 79, 0.2); /* Light purple background for body */
+
+}
+.md-typeset .trouble > .admonition-title,
+.md-typeset .trouble > summary {
+  background-color: rgba(240, 84, 79, 0.9);
+  color: #ffffff;
+}
+.md-typeset .trouble > .admonition-title::before,
+.md-typeset .trouble > summary::before {
+  background-color: #ffffff;
+  -webkit-mask-image: var(--md-admonition-icon--trouble);
+          mask-image: var(--md-admonition-icon--trouble);
+}
+
+
+
+/* General admonition styles */
+.md-typeset .admonition {
+  font-size: .8rem !important;
+}
+
+/* Heading Formats */
+.md-typeset h1 {
+  background-color: #455A64; /* Darker blue-grey for contrast */
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.md-typeset h2 {
+  background-color: #CFD8DC; /* Light blue-grey */
+  color: #263238; /* Almost black for contrast */
+  padding: 0.75rem;
+  border-left: 6px solid #607D8B;
+  margin-top: 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Apply consistent spacing to all bullet list items */
+.md-typeset ul li,
+.md-typeset ol li {
+  margin-bottom: 0.5em !important;
+}
+
+/* Horizontal Rule */
+hr {
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin: 2rem 0;
+}
+
+/* Code Blocks */
+.md-typeset code {
+  background-color: rgba(219, 219, 219, 0.637);
+  color: #474747;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+/* Table Styles */
+.full-width-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.full-width-table td {
+  width: 50%;
+  border: 1px solid #ccc;
+  padding: .5em;
+  vertical-align: top;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  border-bottom: 1px dotted #000;
+  display: inline; /* changed from inline-block to inline */
+  vertical-align: baseline;
+}
+
+/* Tooltip content */
+.tooltip .tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+  width: max-content;
+  max-width: 600px;
+  white-space: normal;
+  text-align: left;
+}
+
+/* Show on hover */
+.tooltip:hover .tooltip-content {
+  display: block;
+}
+
+/* Tooltip image */
+.tooltip .tooltip-content img {
+  display: block;
+  width: auto;
+  max-width: 550px;
+  height: auto;
+}
