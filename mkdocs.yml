@@ -1,0 +1,43 @@
+site_name: Pano2VR
+theme: 
+  name: material
+  palette:
+    scheme: default
+    primary: blue grey
+    accent: teal
+  features:
+    - navigation.sections     # Group items under section headers
+    - navigation.expand       # Sidebar expands all sections
+    - navigation.path         # Show path in navigation
+    - navigation.tabs         # Use tabs for navigation
+    - navigation.tabs.sticky  # Sticky top tabs if used
+    - toc.integrate
+    - search.suggest
+
+extra_css:
+  - stylesheets/extra.css
+nav:
+  - Home: index.md
+  - Tutorials:
+      - Getting Started: tutorials/getting-started.md
+      - Adding Images: tutorials/adding-images.md
+      - Adding Video: tutorials/adding-videos.md
+  - Resources:
+      - Image Properties: resources/image-properties.md
+      - Video Properties: resources/video-properties.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.blocks.caption
+  - md_in_html
+  - extra
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+plugins:
+  - glightbox
+  - search
