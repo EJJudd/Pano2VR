@@ -2,22 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ejjudd.github.io/Pano2VR/index.html</loc>
-         <lastmod>2025-06-30</lastmod>
+         <lastmod>2025-07-01</lastmod>
+    </url>
+    <url>
+         <loc>https://ejjudd.github.io/Pano2VR/resources.html</loc>
+         <lastmod>2025-07-01</lastmod>
+    </url>
+    <url>
+         <loc>https://ejjudd.github.io/Pano2VR/tutorials.html</loc>
+         <lastmod>2025-07-01</lastmod>
     </url>
     <url>
          <loc>https://ejjudd.github.io/Pano2VR/resources/video-properties.html</loc>
-         <lastmod>2025-06-30</lastmod>
+         <lastmod>2025-07-01</lastmod>
     </url>
     <url>
          <loc>https://ejjudd.github.io/Pano2VR/tutorials/adding-images.html</loc>
-         <lastmod>2025-06-30</lastmod>
+         <lastmod>2025-07-01</lastmod>
     </url>
     <url>
          <loc>https://ejjudd.github.io/Pano2VR/tutorials/adding-videos.html</loc>
-         <lastmod>2025-06-30</lastmod>
+         <lastmod>2025-07-01</lastmod>
     </url>
     <url>
          <loc>https://ejjudd.github.io/Pano2VR/tutorials/getting-started.html</loc>
-         <lastmod>2025-06-30</lastmod>
+         <lastmod>2025-07-01</lastmod>
     </url>
 </urlset>

@@ -119,6 +119,14 @@
   text-align: left;
 }
 
+.title-box h1 {
+  background: none;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 /* Apply consistent spacing to all bullet list items */
 .md-typeset ul li,
 .md-typeset ol li {
@@ -135,7 +143,7 @@ hr {
 
 /* Code Blocks */
 .md-typeset code {
-  background-color: rgba(219, 219, 219, 0.637);
+  background-color: rgba(235, 235, 235, 0.873);
   color: #474747;
   padding: 0.1em 0.3em;
   border-radius: 3px;
